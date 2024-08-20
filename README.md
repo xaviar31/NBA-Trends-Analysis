@@ -1,18 +1,3 @@
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data](#data)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/NBA-Trends-Analysis.git
-
-
-
 # NBA Trends Analysis
 Analyzing changes in trends throughout the 2000-2024 NBA seasons using Python in Jupyter Notebook. This project utilizes web scraping, Python, and data analysis techniques to discover how different player stats have changed over the past 20 years in the NBA. 
 
