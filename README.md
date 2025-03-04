@@ -1,18 +1,23 @@
-# NBA Trends Analysis
-Analyzing changes in trends throughout the 2000-2024 NBA seasons using Python in Jupyter Notebook. This project utilizes web scraping, Python, and data analysis techniques to discover how different player stats have changed over the past 20 years in the NBA. 
+# NBA Trends Data Analysis
 
-*Primary tools: Jupyter Notebook, Python, Web Scraping, pandas, plotly, BeautifulSoup*
+## Overview
+This project focuses on analyzing NBA player statistics from the 2000-2024 seasons. It involves web scraping, data cleaning, and statistical analysis to explore trends in player performance over time.
 
-## Contents
-#### Web Scraping
-- [notebooks/NBA_Stats_Scraping] BeautifulSoup (bs4) and requests libraries for web scraping, pandas for data manipulation. Defines the URL for the API endpoint to fetch NBA player stats (points per game in this case). Sends a GET request and parses the response. Retrieves and processes the headers and data from the API response. Creates a temporary DataFrame with the relevant data and additional columns for year and season type. Defines columns and initializes an empty DataFrame. Iterates through different seasons and season types to scrape data. For each combination, fetches data, processes it, and appends it to the main DataFrame. Saves the aggregated data into an Excel file named nba_player_data.xlsx.
+## Data Collection
+The dataset is created by scraping Basketball Reference for player statistics, including per-game averages for various metrics. The raw data is processed and cleaned to ensure consistency and accuracy.
 
-- [notebooks/NBA_Data_Analysis] Reads the Excel file containing the NBA player data. Drops unnecessary columns (RANK, EFF). Maps old team abbreviations to new ones and replaces season type names for clarity. Separates data into regular season and playoff data. Calculates additional statistics like shooting percentages, true shooting percentage (TS%), and assist-to-turnover ratio (AST/TOV). Aggregates data by year to compute team-level stats. Computes advanced metrics such as FG3A%, PTS/FGA, FG3M/FGM, FTA/FGA, TS%, AST/TOV, OREB%, DREB%, and STL/TOV.
+## Data Processing
+Using Python, the dataset is structured to include:
+- **Season Information**: `season_start_year`, `Season_type` (Regular Season/Playoffs).
+- **Player & Team Identifiers**: `PLAYER_ID`, `PLAYER`, `TEAM_ID`, `TEAM`.
+- **Performance Metrics (Per Game Averages)**: `PTS`, `REB`, `AST`, `STL`, `BLK`, `TOV`, `FG_PCT`, `FG3_PCT`, `FT_PCT`, and other shooting and rebounding stats.
 
-#### Visualization
-- [notebooks/NBA_Data_Analysis] Correlation matrix heatmap of various metrics using plotly.express. Histograms of player minutes per game in regular and playoff seasons. Trends of various metrics per 48 minutes and per 100 possessions. Aggregates data by year to observe changes in stats over time. Plots trends for advanced metrics per 48 minutes and per 100 possessions. Compares regular season and playoff data by calculating metrics per 100 possessions and plotting trends.
+## Tools & Technologies
+- **Python (Pandas, BeautifulSoup, Matplotlib)** – Used for web scraping, data cleaning, and initial analysis.
+- **Jupyter Notebook** – Main environment for processing and structuring data.
+- **Excel/CSV** – Format for storing the cleaned dataset.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/NBA-Trends-Analysis.git
+## Future Work
+- Further trend analysis and deeper statistical insights.
+- Exploring additional visualizations and predictive modeling.
+- **Tableau Dashboard (Work in Progress)** – Creating an interactive dashboard for data exploration.
