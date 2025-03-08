@@ -1,20 +1,26 @@
 ## **NBA Trends Analysis**
-This project analyzes NBA player statistics and trends over the 2000-2024 seasons using Python, SQL, and Tableau. It involves web scraping, data cleaning, and plotting trends to uncover insights about player performance, team dynamics, and the evolution of key stats over time.
+This project analyzes NBA player statistics and trends over the 2000-2024 seasons using Python and Tableau. The project involves web scraping, data cleaning, statistical analysis, and interactive visualizations to explore the evolution of different basketball metrics including points per game (PPG), assists per game (APG), rebounds per game (RPG), 3-point attempts across the league, and more!
 
 ---
 
 ## **🔍 Techniques Used:**
 1. **Data Gathering (Web Scraping)**:  
-   Python's BeautifulSoup and requests libraries were used to scrape data from the BasketballReference website. This process gathered player statistics from each season and stores them in structured CSV files for further analysis.
+   - **Requests Library**: The **requests** library was used to send HTTP requests to the NBA Stats API, to retrieve player statistics in JSON format for the 2000-2024 NBA regular seasons and playoff data.
+   - **Pandas**: After getting the data, pandas was used to parse and structure the data into a clean and usable DataFrame.
+   - **Data Collection Process**:
+      - This project scrapes NBA player performance data for the 2000-01 season to the current 2024-25 seasons and both regular seasons and playoffs.
+      - The data is structured with columns including player name, points, assists, rebounds, and other key statistics.
+      - The data is saved in an Excel file for further analysis and visualization.
 
-2. **Data Cleaning and Preprocessing**:  
-   The scraped data is cleaned using **Pandas**. This step includes removing duplicates, handling missing values, and transforming the data into a usable format for analysis. We focus on columns like Player Name, Team, PPG, RPG, APG, and other performance metrics.
+2. **Data Cleaning and Preprocessing**:
+   - **Pandas**: Used to clean and preprocess the scraped data. This includes removing duplicates, handling missing values, and transforming data into a format suitable for analysis.
 
-3. **Data Analysis**:  
-   Python, with Pandas and NumPy, is used to analyze trends in NBA player stats over the years. Key analyses include examining changes in PPG, 3-point attempts, assists per game, and more. Statistical methods and visualizations are employed to reveal patterns and insights.
+3. **Data Analysis**:
+   - **Python, Pandas, and NumPy**: Used to analyze trends in player statistics over time. Key analyses include examining changes in PPG, 3-point attempts, assists per game, and more.
 
-4. **Visualization (Work in Progress)**:  
-   Tableau will be used to create an interactive dashboard that allows users to explore NBA player data and visualize trends over time.
+4. **Visualization**:
+   - **Tableau**: The project includes an interactive Tableau dashboard that visualizes player stats and trends over time, allowing users to explore and compare data for individual players and teams.
+![Dashboard Screenshot](visualizations/NBA-Dashboard-SS.pdf)
 
 ---
 
@@ -28,7 +34,7 @@ The dataset contains player statistics from the 2000-2024 NBA seasons, with colu
 - Assists Per Game (APG)
 - Steals, Blocks, Minutes Played, and other performance metrics
 
-The data is scraped from Basketball Reference and cleaned for analysis.
+The data is scraped from the NBA API and cleaned for analysis.
 
 ---
 
@@ -41,13 +47,15 @@ The data is scraped from Basketball Reference and cleaned for analysis.
 ---
 
 ## **🔑 Key Insights:**
-- **Top Players by PPG**: Points scored in the league have steadily increase over time as the game continues to advance with stronger athletes and elite scorers.
-- **3-Point Attempt Trends**: To know surprise the game of basketball has changes over these past 20 years especially within the 3 point game as there is a major increase of 3 point shot attempts within the league over time.
-- **Assists Per Game Trends**: Over time, specifically after the 2012-2013 NBA season, there was a noticeable increase of assists within the league and it continues to grow.
+- **Top Players by PPG**: Points scored in the league have steadily increased over time due to the evolution of the game and improved athlete performance.
+- **3-Point Attempt Trends**: A noticeable increase in 3-point attempts across the league, reflecting the growing emphasis on the 3-point shot.
+- **Assists Per Game Trends**: A significant increase in assists per game, especially after the 2012-13 season, highlighting a shift toward ball movement and team play.
 
 ---
 
 ## **📑 Conclusion:**
-This project uncovers valuable insights into the evolution of NBA player stats over the past two decades. By leveraging Python for web scraping, data cleaning, and analysis, users can explore how key performance metrics have changed over time. The project highlights significant trends in player performance and allows for an engaging, interactive experience through the Tableau dashboard.
+This project uncovers valuable insights into the evolution of NBA player stats over the past two decades. By leveraging Python for web scraping, data cleaning, and analysis, users can explore how key performance metrics have changed over time. The project also highlights significant trends in player performance and provides an interactive experience through the Tableau dashboard.
 
-Future improvements could involve adding more granular stats (e.g., player efficiency rating, advanced analytics) or expanding the dataset to include more teams or individual game-level data.
+**Future Improvements**:
+- Add more specific stats (ex: player efficiency rating, advanced analytics).
+- Expand the dataset to include more past seasons or individual game-level data.
