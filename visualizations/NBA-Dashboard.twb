@@ -2266,8 +2266,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='43' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='100000' id='46' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='45' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
                 <zone fixed-size='280' h='98222' id='5' is-fixed='true' is-scaled='1' param='C:/Users/Xavi/Desktop/NBA-Trends-Analysis/visualizations/Dashboard Background.jpg' type-v2='bitmap' w='99000' x='500' y='889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2288,7 +2288,7 @@
                   </zone-style>
                 </zone>
                 <zone fixed-size='117' h='13889' id='10' is-fixed='true' name='3s Attempted Sparkline' show-title='false' w='16744' x='13688' y='19444'>
-                  <layout-cache cell-count-w='23' type-h='fixed' type-w='cell' />
+                  <layout-cache type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
