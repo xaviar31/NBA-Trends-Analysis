@@ -20,7 +20,7 @@ This project analyzes NBA player statistics and trends over the 2000-2024 season
 
 4. **Visualization**:
    - **Tableau**: The project includes an interactive Tableau dashboard that visualizes player stats and trends over time, allowing users to explore and compare data for individual players and teams.
-![Dashboard Screenshot](visualizations/NBA-Dashboard-SS.pdf)
+![Dashboard Screenshot](Dashboard-NBA.png)
 
 ---
 
